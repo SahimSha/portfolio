@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahim Sha | Portfolio</title>
+    <meta name="description" content="Portfolio of Sahim Sha - Computer Science Engineering Student, Web Developer, and Aspiring Software Engineer">
+    <meta name="author" content="Sahim Sha">
+    <meta name="keywords" content="Sahim Sha, Portfolio, Software Engineer, Web Developer, CSE Student, Full Stack Developer">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Sahim Sha</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Sahim</span></h1>
+            <h3 class="typing-text">I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+            <p>Aspiring Software Engineer | Web Developer | Cybersecurity Enthusiast</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="assets/resume.pdf" download class="btn secondary-btn">Download Resume</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/sahim-sha" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SahimSha" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://leetcode.com/u/SahimSha" target="_blank"><i class="fa-solid fa-code"></i></a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="assets/profile.png" alt="Sahim Sha" class="profile-image">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <p>
+                I am a B.Tech Computer Science Engineering student at Siliguri Institute of Technology with interests in Full Stack Development, Cybersecurity, Artificial Intelligence and Problem Solving. I enjoy building practical software solutions and continuously improving my technical skills to create impactful digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="animated-skills-container">
+            <h3 class="subsection-title">Frontend Proficiency</h3>
+            <div class="skill-bar">
+                <div class="info"><span>HTML</span></div>
+                <div class="progress-line html"><span></span></div>
+            </div>
+            <div class="skill-bar">
+                <div class="info"><span>CSS</span></div>
+                <div class="progress-line css"><span></span></div>
+            </div>
+            <div class="skill-bar">
+                <div class="info"><span>JavaScript</span></div>
+                <div class="progress-line javascript"><span></span></div>
+            </div>
+            <div class="skill-bar">
+                <div class="info"><span>React</span></div>
+                <div class="progress-line react"><span></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects & Activity</h2>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fa-brands fa-github"></i> GitHub Stats</h3>
+                <p><strong>Repositories:</strong> <span id="gh-repos">Loading...</span></p>
+                <p><strong>Followers:</strong> <span id="gh-followers">Loading...</span></p>
+                <a href="https://github.com/SahimSha" target="_blank" class="stat-link">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="stat-card">
+                <h3><i class="fa-solid fa-code"></i> LeetCode Stats</h3>
+                
+                <div id="leetcode-stats-container">
+                    <p><strong>Problems Solved:</strong> Loading...</p>
+                    <p><strong>Difficulty:</strong> Loading...</p>
+                </div>
+                
+                <a href="https://leetcode.com/u/SahimSha" target="_blank" class="stat-link">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <h3 class="subsection-title" style="margin-top: 50px;">Featured Projects</h3>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+                    <h3 style="margin-bottom: 0;">SKANS AI</h3>
+                    <span style="font-size: 0.75rem; background: rgba(34, 211, 238, 0.1); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-weight: 600;">In Progress</span>
+                </div>
+                
+                <p>A multi-modal digital trust layer and forensic engine that intercepts generative AI deepfakes, phishing URLs, macro-malware and localized financial scams using OSINT and low-overhead mathematical heuristics.</p>
+                <div class="project-tech">Flask • Tailwind CSS • JavaScript • SQLite • OSINT</div>
+                
+                <div class="project-links">
+                    <span class="btn btn-small" style="opacity: 0.5; cursor: not-allowed; text-align: center;">Coming Soon</span>
+                    <span class="btn btn-small secondary-btn" style="opacity: 0.5; cursor: not-allowed; text-align: center;"><i class="fa-brands fa-github"></i> Private</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Developer Portfolio</h3>
+                <p>A fully responsive, modern web portfolio featuring a custom light/dark theme toggle, real-time GitHub & LeetCode API integrations and smooth scroll animations.</p>
+                <div class="project-tech">HTML5 • CSS3 • JavaScript • REST APIs</div>
+                
+                <div class="project-links">
+                    <a href="#home" class="btn btn-small" style="text-align: center;">Live Demo</a>
+                    <a href="https://github.com/SahimSha/portfolio" target="_blank" class="btn btn-small secondary-btn" style="text-align: center;"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-container">
+            <p>Get a comprehensive overview of my technical skills, experience, and educational background.</p>
+            
+            <div class="resume-preview">
+                <i class="fa-regular fa-file-pdf"></i>
+                <h3>Sahim_Sha_Resume.pdf</h3>
+                <p>PDF Document • 314 KB</p>
+            </div>
+
+            <a href="assets/resume.pdf" download class="btn"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-grid">
+            
+            <div class="contact-info">
+    <h3>Let's Connect</h3>
+    <p>I am actively seeking Web Development and Frontend Developer internship opportunities! Whether you have an open role on your team, want to collaborate on a responsive project or just want to have a quick tech chat, feel free to reach out.</p>
+    <div class="contact-links">
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i> 
+                        <a href="tel:+918597388042">+91 85973 88042</a>
+                    </p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sahimsha1212@gmail.com">sahimsha1212@gmail.com</a></p>
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/sahim-sha" target="_blank">LinkedIn</a></p>
+                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/SahimSha" target="_blank">GitHub</a></p>
+                    <p><i class="fa-solid fa-code"></i> <a href="https://leetcode.com/u/SahimSha" target="_blank">LeetCode</a></p>
+                    <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/sahim-sha" target="_blank">Instagram</a></p>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 
+                        <a href="https://www.google.com/maps/search/?api=1&query=Siliguri,India" target="_blank">
+                            Siliguri, India
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/7365daebf00e011a05d44677cb2e2a21" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Portfolio Contact">
+                <input type="hidden" name="_next" value="https://sahimsha.github.io/portfolio/thankyou.html">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/SahimSha" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/sahim-sha" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/SahimSha" target="_blank"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <p>© 2026 Sahim Sha. All Rights Reserved.</p>
+<p>Built with <i class="fa-solid fa-heart" style="color: #EF4444;"></i> using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <a href="#home" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
