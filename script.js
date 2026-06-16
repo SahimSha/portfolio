@@ -208,3 +208,27 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
     if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Track Resume Downloads
+    const resumeBtn = document.querySelector('a[href*="Resume.pdf"]');
+    if (resumeBtn) {
+        resumeBtn.addEventListener('click', () => {
+            gtag('event', 'click_resume', {
+                'event_category': 'Engagement',
+                'event_label': 'Resume Downloaded'
+            });
+        });
+    }
+
+    // 2. Track VaultMetrics Live Clicks
+    const vaultmetricsBtn = document.querySelector('a[href*="vaultmetrics"]');
+    if (vaultmetricsBtn) {
+        vaultmetricsBtn.addEventListener('click', () => {
+            gtag('event', 'click_vaultmetrics', {
+                'event_category': 'Engagement',
+                'event_label': 'VaultMetrics Live Demo Clicked'
+            });
+        });
+    }
+});
