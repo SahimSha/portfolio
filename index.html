@@ -1,22 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJNPK2EG4J"></script>
-     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     
-     gtag('config', 'G-TJNPK2EG4J');
-     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJNPK2EG4J"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TJNPK2EG4J');
+    </script>
+
+    <!-- Basic SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahim Sha | Portfolio</title>
-    <meta name="description" content="Portfolio of Sahim Sha - Computer Science Engineering Student, Web Developer and Aspiring Software Engineer">
-    <meta name="author" content="Sahim Sha">
-    <meta name="keywords" content="Sahim Sha, Portfolio, Software Engineer, Web Developer, CSE Student, Full Stack Developer">
 
+    <title>Sahim Sha | Aspiring Software Engineer &amp; Web Developer</title>
+
+    <meta name="description" content="Official portfolio of Sahim Sha, a Computer Science Engineering student at Siliguri Institute of Technology. Explore software projects, technical skills, and development experience.">
+
+    <meta name="author" content="Sahim Sha">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Sahim Sha, Sahim Sha portfolio, software engineer, web developer, computer science engineering student, Siliguri Institute of Technology">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sahimsha.github.io/portfolio/">
+
+    <!-- Open Graph: Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sahim Sha | Software Engineering Portfolio">
+    <meta property="og:description" content="Official portfolio of Sahim Sha, featuring software projects, technical skills, and development experience.">
+    <meta property="og:url" content="https://sahimsha.github.io/portfolio/">
+    <meta property="og:site_name" content="Sahim Sha Portfolio">
+    <meta property="og:image" content="https://sahimsha.github.io/portfolio/assets/profile.png">
+
+    <!-- Twitter / X Sharing -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sahim Sha | Software Engineering Portfolio">
+    <meta name="twitter:description" content="Explore Sahim Sha's software projects, technical skills, and development experience.">
+    <meta name="twitter:image" content="https://sahimsha.github.io/portfolio/assets/profile.png">
+
+    <!-- Person Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sahim Sha",
+      "url": "https://sahimsha.github.io/portfolio/",
+      "jobTitle": "Aspiring Software Engineer",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "Siliguri Institute of Technology"
+      },
+      "sameAs": [
+        "https://github.com/SahimSha",
+        "https://www.linkedin.com/in/sahim-sha",
+        "https://leetcode.com/u/SahimSha"
+      ]
+    }
+    </script>
+
+    <!-- Existing Stylesheets and Favicon -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -73,7 +118,7 @@
 
     <section id="skills" class="section">
         <h2 class="section-title">Technical Skills</h2>
-        
+
         <div class="skills-grid">
             <div class="skill-category">
                 <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
@@ -134,12 +179,12 @@
             </div>
             <div class="stat-card">
                 <h3><i class="fa-solid fa-code"></i> LeetCode Stats</h3>
-                
+
                 <div id="leetcode-stats-container">
                     <p><strong>Problems Solved:</strong> Loading...</p>
                     <p><strong>Difficulty:</strong> Loading...</p>
                 </div>
-                
+
                 <a href="https://leetcode.com/u/SahimSha" target="_blank" class="stat-link">View Profile <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
@@ -151,7 +196,7 @@
                 <h3>VaultMetrics</h3>
                 <p>A zero-knowledge, client-side web security workbench that audits password complexity via local heuristics, runs real-time data-breach integrity checks and features an inline cryptographic tool for message encryption and custom emoji-matrix obfuscation.</p>
                 <div class="project-tech">JavaScript (ES6+) • Web Crypto API • PWA</div>
-                
+
                 <div class="project-links">
                     <a href="https://sahimsha.github.io/vaultmetrics" target="_blank" class="btn btn-small" style="text-align: center;">Live Demo</a>
                     <a href="https://github.com/SahimSha/vaultmetrics" target="_blank" class="btn btn-small secondary-btn" style="text-align: center;"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -163,10 +208,10 @@
                     <h3 style="margin-bottom: 0;">AttendX</h3>
                     <span style="font-size: 0.75rem; background: rgba(34, 211, 238, 0.1); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-weight: 600;">In Progress</span>
                 </div>
-                
+
                 <p>A college attendance management Progressive Web App designed to streamline attendance tracking, role-based access, and academic workflows for students, class representatives, and faculty.</p>
                 <div class="project-tech">React • TypeScript • Tailwind CSS • FastAPI • PostgreSQL</div>
-                
+
                 <div class="project-links">
                     <a href="https://attendx-portal.vercel.app" target="_blank" class="btn btn-small" style="text-align: center;">Live Demo</a>
                     <span class="btn btn-small secondary-btn" style="opacity: 0.6; cursor: not-allowed; text-align: center;" aria-label="GitHub repository is private" title="Source code is private"><i class="fa-brands fa-github" aria-hidden="true"></i> Private Repository</span>
@@ -180,7 +225,7 @@
         <h2 class="section-title">Resume</h2>
         <div class="resume-container">
             <p>Get a comprehensive overview of my technical skills, experience and educational background.</p>
-            
+
             <div class="resume-preview">
                 <i class="fa-regular fa-file-pdf"></i>
                 <h3>Sahim_Sha_Resume.pdf</h3>
@@ -194,14 +239,14 @@
     <section id="contact" class="section">
         <h2 class="section-title">Contact Me</h2>
         <div class="contact-grid">
-            
+
             <div class="contact-info">
-    <h3>Let's Connect</h3>
-    <p>I am actively seeking Web Development and Frontend Developer internship opportunities! Whether you have an open role on your team, want to collaborate on a responsive project or just want to have a quick tech chat, feel free to reach out.</p>
-    <div class="contact-links">
+                <h3>Let's Connect</h3>
+                <p>I am actively seeking Web Development and Frontend Developer internship opportunities! Whether you have an open role on your team, want to collaborate on a responsive project or just want to have a quick tech chat, feel free to reach out.</p>
+                <div class="contact-links">
 
                     <p>
-                        <i class="fa-solid fa-phone"></i> 
+                        <i class="fa-solid fa-phone"></i>
                         <a href="tel:+918597388042">+91 85973 88042</a>
                     </p>
                     <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sahimsha1212@gmail.com">sahimsha1212@gmail.com</a></p>
@@ -210,7 +255,7 @@
                     <p><i class="fa-solid fa-code"></i> <a href="https://leetcode.com/u/SahimSha" target="_blank">LeetCode</a></p>
                     <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/sahim.sha" target="_blank">Instagram</a></p>
                     <p>
-                        <i class="fa-solid fa-location-dot"></i> 
+                        <i class="fa-solid fa-location-dot"></i>
                         <a href="https://www.google.com/maps/search/?api=1&query=Siliguri,India" target="_blank">
                             Siliguri, India
                         </a>
@@ -222,9 +267,9 @@
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
-                
+
                 <button type="submit" class="btn">Send Message <i class="fa-regular fa-paper-plane"></i></button>
-                
+
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New Portfolio Contact">
                 <input type="hidden" name="_next" value="https://sahimsha.github.io/portfolio/thankyou.html">
@@ -245,7 +290,7 @@
             <a href="https://leetcode.com/u/SahimSha" target="_blank"><i class="fa-solid fa-code"></i></a>
         </div>
         <p>© 2026 Sahim Sha. All Rights Reserved.</p>
-<p>Built with <i class="fa-solid fa-heart" style="color: #EF4444;"></i> using HTML, CSS & JavaScript</p>
+        <p>Built with <i class="fa-solid fa-heart" style="color: #EF4444;"></i> using HTML, CSS & JavaScript</p>
     </footer>
 
     <a href="#home" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
