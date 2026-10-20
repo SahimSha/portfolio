@@ -170,7 +170,11 @@ if(contactForm){
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["a Full Stack Developer", "an Aspiring Software Engineer", "a Cybersecurity Enthusiast"];
+const textArray = [
+  "an Aspiring Software Engineer",
+  "a Web Developer",
+  "a Problem Solver"
+];
 const typingDelay = 100;    // Medium speed for typing each letter
 const erasingDelay = 50;    // Speed of backspacing
 const newTextDelay = 3000;  // Pause time before it starts erasing (Slowed down)
